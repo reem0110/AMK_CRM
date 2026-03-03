@@ -1,0 +1,16 @@
+/* SIDEBAR */
+QWidget { background-color: #F3F4F6; font-family: Arial; }
+QPushButton { border-radius: 8px; padding: 5px; }
+QPushButton:hover { background-color: #E0E7FF; cursor: pointer; }
+QPushButton#active { background-color: #6366F1; color: white; }
+
+/* STAT CARDS */
+QLabel.stat-title { font-size: 14px; color: #6B7280; }
+QLabel.stat-value { font-size: 22px; font-weight: bold; color: #111827; }
+QFrame.stat-card { background-color: #ffffff; border-radius: 15px; padding: 15px; }
+
+/* ADD & DELETE BUTTONS */
+QPushButton#add-btn { background-color: #10B981; color: white; font-weight: bold; }
+QPushButton#add-btn:hover { background-color: #059669; }
+QPushButton#delete-btn { background-color: #EF4444; color: white; }
+QPushButton#delete-btn:hover { background-color: #DC2626; }
