@@ -4,6 +4,8 @@ from PySide6.QtWidgets import (QApplication, QWidget, QVBoxLayout, QLabel, QPush
 from PySide6.QtCore import Qt
 from client_dao import add_client, get_all_clients, search_clients, delete_client
 from order_dao import get_all_orders
+from brigade_dao import add_brigade, get_all_brigades, delete_brigade
+from order_history_dao import add_order_history, get_history_by_order
 
 # ---------------- CLIENT CARD ----------------
 class ClientCard(QWidget):
@@ -102,6 +104,7 @@ class MainWindow(QWidget):
 
         main_layout = QHBoxLayout()
         self.setLayout(main_layout)
+        
 
         # ---------------- SIDEBAR ----------------
         sidebar = QFrame()
@@ -127,6 +130,8 @@ class MainWindow(QWidget):
         sidebar_layout.addStretch()
 
         main_layout.addWidget(sidebar)
+
+        
 
         # ---------------- STACKED LAYOUT ----------------
         self.stack = QStackedLayout()
